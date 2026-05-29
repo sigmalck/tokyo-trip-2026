@@ -3,11 +3,11 @@
 这个目录现在包含一个 GitHub Pages 友好的静态展示页：
 
 - `index.html`：页面结构和行程内容
-- `assets/styles.css`：视觉样式
+- `assets/styles.css`：视觉样式、地铁/铁路路线条和响应式布局
 - `assets/app.js`：日期筛选、SHIBUYA SKY 倒计时、打印按钮
 - `.nojekyll`：让 GitHub Pages 按静态文件直接发布
 
-页面刻意没有展示手机号、邮箱和预约号，适合公开链接分享。
+页面刻意没有展示手机号、邮箱、预约号和酒店联系电话，适合公开链接分享。
 
 ## 本地预览
 
