@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="2026 年 6 月东京双人旅行计划：迪士尼、浅草、晴空塔、秋叶原、涩谷、寿司与烧肉预约状态。"
+    />
+    <title>Tokyo 2026 Trip Plan</title>
+    <link rel="preconnect" href="https://commons.wikimedia.org" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <div class="hero__media" aria-hidden="true"></div>
+      <nav class="topbar" aria-label="页面导航">
+        <a class="brand" href="#top" aria-label="回到顶部">
+          <span class="brand__mark">TYO</span>
+          <span>Tokyo 2026</span>
+        </a>
+        <div class="topbar__links">
+          <a href="#itinerary">行程</a>
+          <a href="#bookings">预约</a>
+          <a href="#next">待办</a>
+        </div>
+      </nav>
+
+      <div class="hero__content">
+        <p class="eyebrow">6/18-6/22 · Gotanda Base</p>
+        <h1>东京五日行程</h1>
+        <p class="hero__lead">
+          从五反田出发，把 Disneyland、东京东线、涩谷日落和两顿已锁定的正式餐，压成一条舒服可执行的路线。
+        </p>
+        <div class="hero__actions" aria-label="快速操作">
+          <a class="button button--primary" href="#itinerary">查看每日安排</a>
+          <button class="button button--ghost" type="button" data-print>打印行程</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="status-strip" aria-label="当前状态">
+        <article>
+          <span class="status-strip__label">餐厅</span>
+          <strong>2/2 已订</strong>
+          <p>蛇の市本店 · 焼肉 六甲園</p>
+        </article>
+        <article>
+          <span class="status-strip__label">Disney</span>
+          <strong>门票已订</strong>
+          <p>美女与野兽 DPA 入园后购买</p>
+        </article>
+        <article>
+          <span class="status-strip__label">SHIBUYA SKY</span>
+          <strong>待抢票</strong>
+          <p><span data-countdown>计算中</span></p>
+        </article>
+      </section>
+
+      <section class="overview section-shell" aria-labelledby="overview-title">
+        <div class="section-heading">
+          <p class="eyebrow">Trip Shape</p>
+          <h2 id="overview-title">路线逻辑</h2>
+        </div>
+        <div class="overview__grid">
+          <article class="route-note">
+            <h3>先稳住到达日</h3>
+            <p>6/18 不放硬预约，落地后只做五反田入住和涩谷轻逛，给航班、入境和行李留缓冲。</p>
+          </article>
+          <article class="route-note">
+            <h3>Disney 单独成日</h3>
+            <p>6/19 全天给 Disneyland，门票已订，主目标是 Beauty and the Beast；晚上不再塞正式餐。</p>
+          </article>
+          <article class="route-note">
+            <h3>东线接寿司</h3>
+            <p>6/20 浅草、晴空塔、秋叶原一路向日本桥收束，18:30 到蛇の市本店吃寿司。</p>
+          </article>
+          <article class="route-note">
+            <h3>西线接夜景</h3>
+            <p>6/21 原宿、表参道、涩谷之后抢 SHIBUYA SKY 日落票，再去池尻大桥吃烧肉。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell" id="itinerary" aria-labelledby="itinerary-title">
+        <div class="section-heading section-heading--row">
+          <div>
+            <p class="eyebrow">Daily Plan</p>
+            <h2 id="itinerary-title">每日安排</h2>
+          </div>
+          <div class="day-switcher" aria-label="选择日期">
+            <button type="button" data-day-filter="all" class="is-active">全部</button>
+            <button type="button" data-day-filter="d0619">Disney</button>
+            <button type="button" data-day-filter="d0620">东线</button>
+            <button type="button" data-day-filter="d0621">涩谷</button>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <article class="day-card" data-day="d0618">
+            <div class="day-card__date">
+              <span>6/18</span>
+              <small>周四</small>
+            </div>
+            <div class="day-card__body">
+              <h3>到达日：五反田 + 涩谷轻松逛</h3>
+              <ol>
+                <li><time>15:50</time><span>抵达羽田机场。</span></li>
+                <li><time>17:30-18:30</time><span>到 JR-East Hotel Mets Premier Gotanda 入住/放行李。</span></li>
+                <li><time>19:00-21:00</time><span>涩谷 PARCO、Pokémon Center SHIBUYA、Nintendo Tokyo。</span></li>
+              </ol>
+              <p class="day-card__note">第一晚不放硬预约，晚餐随缘吃五反田或涩谷。</p>
+            </div>
+          </article>
+
+          <article class="day-card day-card--image" data-day="d0619">
+            <div class="day-card__date">
+              <span>6/19</span>
+              <small>周五</small>
+            </div>
+            <div class="day-card__body">
+              <h3>Tokyo Disneyland：美女与野兽主日</h3>
+              <ol>
+                <li><time>07:30</time><span>从五反田出发，尽量早到排队入园。</span></li>
+                <li><time>09:00-21:00</time><span>Disneyland 全天；门票已订。</span></li>
+                <li><time>入园后</time><span>第一时间在 App 买 Beauty and the Beast Disney Premier Access。</span></li>
+              </ol>
+              <p class="day-card__note">园内解决晚餐，回五反田后轻松收尾。</p>
+            </div>
+            <figure>
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Tokyo%20Disneyland%20Enchanted%20Tale%20of%20Beauty%20and%20the%20Beast%20%2853442215430%29.jpg"
+                alt="Tokyo Disneyland Enchanted Tale of Beauty and the Beast 外观"
+                loading="lazy"
+              />
+            </figure>
+          </article>
+
+          <article class="day-card day-card--image" data-day="d0620">
+            <div class="day-card__date">
+              <span>6/20</span>
+              <small>周六</small>
+            </div>
+            <div class="day-card__body">
+              <h3>东京东线：浅草 + 晴空塔 + 秋叶原 + 蛇の市</h3>
+              <ol>
+                <li><time>09:30-11:15</time><span>浅草寺、仲见世通、隅田川。</span></li>
+                <li><time>11:30-13:30</time><span>Solamachi + Pokémon Center SKYTREE TOWN。</span></li>
+                <li><time>14:00-17:15</time><span>秋叶原卡牌店，重点 Hareruya2 Akihabara Tower。</span></li>
+                <li><time>18:30</time><span>蛇の市本店晚餐，2 人，席のみ。</span></li>
+              </ol>
+              <p class="day-card__note">晴空塔展望台可按天气决定，不是必买项。</p>
+            </div>
+            <figure>
+              <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Tokyo%20Skytree%20as%20seen%20from%20Sensoji%20in%20Tokyo%2C%202019%20-%20456.jpg"
+                alt="浅草寺远望东京晴空塔"
+                loading="lazy"
+              />
+            </figure>
+          </article>
+
+          <article class="day-card" data-day="d0621">
+            <div class="day-card__date">
+              <span>6/21</span>
+              <small>周日</small>
+            </div>
+            <div class="day-card__body">
+              <h3>东京西线：原宿/表参道 + 涩谷日落 + 六甲園</h3>
+              <ol>
+                <li><time>10:00-11:30</time><span>明治神宫。</span></li>
+                <li><time>11:30-17:00</time><span>原宿、表参道、涩谷 PARCO、Loft、Tower Records。</span></li>
+                <li><time>17:40-19:30</time><span>SHIBUYA SKY 日落/蓝调时刻，目标票待抢。</span></li>
+                <li><time>20:30</time><span>焼肉 六甲園晚餐，2 人。</span></li>
+              </ol>
+              <p class="day-card__note">若 SHIBUYA SKY 只抢到更晚入场，需要重新评估晚餐缓冲。</p>
+            </div>
+          </article>
+
+          <article class="day-card" data-day="d0622">
+            <div class="day-card__date">
+              <span>6/22</span>
+              <small>周一</small>
+            </div>
+            <div class="day-card__body">
+              <h3>返程日：不排景点</h3>
+              <ol>
+                <li><time>08:30-09:30</time><span>早餐、收拾行李。</span></li>
+                <li><time>10:00</time><span>从五反田出发去羽田。</span></li>
+                <li><time>13:30</time><span>航班起飞。</span></li>
+              </ol>
+              <p class="day-card__note">返程日保持简单，避免最后一刻赶行程。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="photo-band" aria-label="Shibuya Sky 日落视角">
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:FilePath/Sunset%20in%20Tokyo%20city%20from%20Shibuya%20Sky%2C%20Tokyo%2C%20Japan.jpg"
+          alt="从 SHIBUYA SKY 看到的东京日落"
+          loading="lazy"
+        />
+        <div>
+          <p class="eyebrow">Key Moment</p>
+          <h2>6/21 日落票是最后一个硬节点</h2>
+          <p>目标 17:40 / 18:00 / 18:20 入场。开售时间是 2026/6/7 00:00 JST，也就是中国时间 2026/6/6 23:00。</p>
+        </div>
+      </section>
+
+      <section class="section-shell" id="bookings" aria-labelledby="bookings-title">
+        <div class="section-heading">
+          <p class="eyebrow">Booking Board</p>
+          <h2 id="bookings-title">预约状态</h2>
+        </div>
+        <div class="booking-grid">
+          <article class="booking-card is-done">
+            <span class="pill">已订</span>
+            <h3>蛇の市本店</h3>
+            <p>6/20 周六 18:30 · 2 人 · 席のみ</p>
+            <small>预约号未在公开页面展示。</small>
+          </article>
+          <article class="booking-card is-done">
+            <span class="pill">已订</span>
+            <h3>焼肉 六甲園</h3>
+            <p>6/21 周日 20:30 · 2 人</p>
+            <small>当日取消 course 100%。</small>
+          </article>
+          <article class="booking-card is-done">
+            <span class="pill">已订</span>
+            <h3>Tokyo Disneyland</h3>
+            <p>6/19 周五 · 门票已订</p>
+            <small>Beauty and the Beast DPA 入园后买。</small>
+          </article>
+          <article class="booking-card is-pending">
+            <span class="pill">待抢</span>
+            <h3>SHIBUYA SKY</h3>
+            <p>6/21 周日 · 17:40-18:20 优先</p>
+            <small>6/7 00:00 JST 开售。</small>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell next-actions" id="next" aria-labelledby="next-title">
+        <div class="section-heading">
+          <p class="eyebrow">Next Moves</p>
+          <h2 id="next-title">剩余待办</h2>
+        </div>
+        <ul class="checklist">
+          <li>
+            <span class="checklist__status">P0</span>
+            <div>
+              <strong>6/7 00:00 JST 抢 SHIBUYA SKY</strong>
+              <p>目标 17:40 / 18:00 / 18:20；失败则接受 18:40 / 19:00 或夜景票。</p>
+            </div>
+          </li>
+          <li>
+            <span class="checklist__status">当天</span>
+            <div>
+              <strong>Disney 入园后立刻买 DPA</strong>
+              <p>美女与野兽不是提前随门票锁定，入园扫码后第一时间操作。</p>
+            </div>
+          </li>
+          <li>
+            <span class="checklist__status">可选</span>
+            <div>
+              <strong>晴空塔展望台按天气决定</strong>
+              <p>只逛 Solamachi 和 Pokémon Center 不需要订票。</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Public view: 不展示手机号、邮箱或预约号。</p>
+      <p>
+        Photos:
+        <a href="https://commons.wikimedia.org/wiki/File:Sunset_in_Tokyo_city_from_Shibuya_Sky,_Tokyo,_Japan.jpg">Shibuya Sky</a>,
+        <a href="https://commons.wikimedia.org/wiki/File:Tokyo_Skytree_as_seen_from_Sensoji_in_Tokyo,_2019_-_456.jpg">Sensoji / Skytree</a>,
+        <a href="https://commons.wikimedia.org/wiki/File:Tokyo_Disneyland_Enchanted_Tale_of_Beauty_and_the_Beast_(53442215430).jpg">Tokyo Disneyland</a>.
+      </p>
+    </footer>
+
+    <script src="assets/app.js"></script>
+  </body>
+</html>

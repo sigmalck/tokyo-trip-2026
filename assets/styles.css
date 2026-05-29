@@ -1,0 +1,622 @@
+:root {
+  color-scheme: light;
+  --ink: #252422;
+  --muted: #68645d;
+  --paper: #fbfaf6;
+  --surface: #ffffff;
+  --line: #dedbd2;
+  --coral: #e85d46;
+  --teal: #0f8b8d;
+  --gold: #f0bd3a;
+  --forest: #466362;
+  --shadow: 0 20px 60px rgba(37, 36, 34, 0.13);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.hero {
+  position: relative;
+  min-height: 82vh;
+  display: grid;
+  align-content: space-between;
+  overflow: hidden;
+  color: #fff;
+  background: #1f2524;
+}
+
+.hero__media {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(16, 17, 17, 0.76), rgba(16, 17, 17, 0.24) 58%, rgba(16, 17, 17, 0.58)),
+    url("https://commons.wikimedia.org/wiki/Special:FilePath/Sunset%20in%20Tokyo%20city%20from%20Shibuya%20Sky%2C%20Tokyo%2C%20Japan.jpg") center / cover;
+}
+
+.topbar,
+.hero__content {
+  position: relative;
+  z-index: 1;
+}
+
+.topbar {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 800;
+}
+
+.brand__mark {
+  display: inline-grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.48);
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.topbar__links {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.topbar__links a {
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 14px;
+  color: rgba(255, 255, 255, 0.9);
+  border: 1px solid transparent;
+}
+
+.topbar__links a:hover,
+.topbar__links a:focus-visible {
+  border-color: rgba(255, 255, 255, 0.5);
+  outline: none;
+}
+
+.hero__content {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 84px 0 104px;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: var(--coral);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.hero .eyebrow {
+  color: #ffd36f;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  max-width: 780px;
+  margin-bottom: 18px;
+  font-size: clamp(3rem, 10vw, 7.4rem);
+  line-height: 0.95;
+  letter-spacing: 0;
+}
+
+h2 {
+  margin-bottom: 14px;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.05;
+  letter-spacing: 0;
+}
+
+h3 {
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+
+.hero__lead {
+  max-width: 620px;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.button {
+  min-height: 46px;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 18px;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+}
+
+.button--primary {
+  border-color: var(--coral);
+  background: var(--coral);
+}
+
+.button--ghost:hover,
+.button--ghost:focus-visible {
+  background: rgba(255, 255, 255, 0.14);
+  outline: none;
+}
+
+.status-strip {
+  position: relative;
+  z-index: 3;
+  width: min(1120px, calc(100% - 32px));
+  margin: -56px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.status-strip article {
+  min-height: 112px;
+  padding: 22px;
+  border-right: 1px solid var(--line);
+}
+
+.status-strip article:last-child {
+  border-right: 0;
+}
+
+.status-strip strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 1.25rem;
+}
+
+.status-strip p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.status-strip__label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--teal);
+  font-size: 0.74rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.section-shell {
+  width: min(1120px, calc(100% - 32px));
+  margin: 94px auto 0;
+}
+
+.section-heading {
+  margin-bottom: 28px;
+}
+
+.section-heading--row {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.overview__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.route-note {
+  min-height: 198px;
+  padding: 22px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+
+.route-note:nth-child(2) {
+  border-top: 5px solid var(--gold);
+}
+
+.route-note:nth-child(3) {
+  border-top: 5px solid var(--teal);
+}
+
+.route-note:nth-child(4) {
+  border-top: 5px solid var(--coral);
+}
+
+.route-note p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.day-switcher {
+  display: inline-flex;
+  gap: 4px;
+  padding: 4px;
+  background: #eeece4;
+}
+
+.day-switcher button {
+  min-height: 38px;
+  border: 0;
+  padding: 0 14px;
+  color: var(--muted);
+  background: transparent;
+  cursor: pointer;
+}
+
+.day-switcher button.is-active {
+  color: #fff;
+  background: var(--ink);
+}
+
+.timeline {
+  display: grid;
+  gap: 16px;
+}
+
+.day-card {
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr);
+  gap: 0;
+  min-height: 220px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+
+.day-card.is-hidden {
+  display: none;
+}
+
+.day-card--image {
+  grid-template-columns: 120px minmax(0, 1fr) minmax(280px, 36%);
+}
+
+.day-card__date {
+  padding: 22px 18px;
+  color: #fff;
+  background: var(--forest);
+}
+
+.day-card:nth-child(even) .day-card__date {
+  background: var(--coral);
+}
+
+.day-card__date span {
+  display: block;
+  font-size: 1.7rem;
+  font-weight: 850;
+}
+
+.day-card__date small {
+  display: block;
+  margin-top: 2px;
+  opacity: 0.86;
+}
+
+.day-card__body {
+  padding: 24px;
+}
+
+.day-card ol {
+  display: grid;
+  gap: 10px;
+  margin: 0 0 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.day-card li {
+  display: grid;
+  grid-template-columns: 116px minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+}
+
+.day-card time {
+  color: var(--teal);
+  font-weight: 800;
+}
+
+.day-card__note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.96rem;
+}
+
+.day-card figure {
+  margin: 0;
+  min-height: 100%;
+}
+
+.day-card figure img {
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  object-fit: cover;
+}
+
+.photo-band {
+  width: min(1120px, calc(100% - 32px));
+  margin: 94px auto 0;
+  display: grid;
+  grid-template-columns: 1.18fr 0.82fr;
+  background: var(--ink);
+  color: #fff;
+}
+
+.photo-band img {
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  object-fit: cover;
+}
+
+.photo-band div {
+  display: grid;
+  align-content: center;
+  padding: clamp(28px, 5vw, 58px);
+}
+
+.photo-band p:last-child {
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.booking-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.booking-card {
+  min-height: 206px;
+  padding: 22px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+
+.booking-card p {
+  color: var(--muted);
+}
+
+.booking-card small {
+  color: var(--muted);
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  margin-bottom: 18px;
+  padding: 0 10px;
+  color: #fff;
+  background: var(--teal);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.booking-card.is-pending .pill {
+  background: var(--coral);
+}
+
+.checklist {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.checklist li {
+  display: grid;
+  grid-template-columns: 74px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+  padding: 18px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+
+.checklist p {
+  margin: 4px 0 0;
+  color: var(--muted);
+}
+
+.checklist__status {
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: var(--ink);
+  font-weight: 800;
+}
+
+.footer {
+  width: min(1120px, calc(100% - 32px));
+  margin: 94px auto 40px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.footer p {
+  margin-bottom: 8px;
+}
+
+.footer a {
+  color: var(--teal);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 880px) {
+  .topbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .status-strip,
+  .overview__grid,
+  .booking-grid,
+  .photo-band {
+    grid-template-columns: 1fr;
+  }
+
+  .status-strip article {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .status-strip article:last-child {
+    border-bottom: 0;
+  }
+
+  .section-heading--row {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .day-switcher {
+    overflow-x: auto;
+  }
+
+  .day-card,
+  .day-card--image {
+    grid-template-columns: 1fr;
+  }
+
+  .day-card__date {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .day-card li {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero {
+    min-height: 760px;
+  }
+
+  .topbar__links {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .topbar__links a,
+  .hero__actions .button {
+    width: 100%;
+  }
+
+  .hero__actions {
+    display: grid;
+  }
+
+  .status-strip {
+    margin-top: -36px;
+  }
+
+  .section-shell,
+  .photo-band {
+    margin-top: 64px;
+  }
+}
+
+@media print {
+  .hero__media,
+  .topbar__links,
+  .hero__actions,
+  .day-switcher,
+  .photo-band,
+  .footer {
+    display: none;
+  }
+
+  .hero {
+    min-height: 0;
+    color: var(--ink);
+    background: #fff;
+  }
+
+  .hero__content {
+    padding: 24px 0;
+  }
+
+  .status-strip,
+  .day-card,
+  .booking-card,
+  .route-note,
+  .checklist li {
+    box-shadow: none;
+    break-inside: avoid;
+  }
+}
