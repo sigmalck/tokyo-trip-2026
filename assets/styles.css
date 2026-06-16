@@ -67,7 +67,7 @@ textarea {
   inset: 0;
   background:
     linear-gradient(90deg, rgba(16, 17, 17, 0.76), rgba(16, 17, 17, 0.24) 58%, rgba(16, 17, 17, 0.58)),
-    url("https://commons.wikimedia.org/wiki/Special:FilePath/Sunset%20in%20Tokyo%20city%20from%20Shibuya%20Sky%2C%20Tokyo%2C%20Japan.jpg") center / cover;
+    url("https://commons.wikimedia.org/wiki/Special:FilePath/Tokyo%20Skytree%20as%20seen%20from%20Sensoji%20in%20Tokyo%2C%202019%20-%20456.jpg") center / cover;
 }
 
 .topbar,

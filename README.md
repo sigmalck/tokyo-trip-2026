@@ -4,7 +4,7 @@
 
 - `index.html`：页面结构和行程内容
 - `assets/styles.css`：视觉样式、地铁/铁路路线条和响应式布局
-- `assets/app.js`：日期筛选、SHIBUYA SKY 倒计时、打印按钮
+- `assets/app.js`：日期筛选和打印按钮
 - `.nojekyll`：让 GitHub Pages 按静态文件直接发布
 
 页面刻意没有展示手机号、邮箱、预约号和酒店联系电话，适合公开链接分享。
